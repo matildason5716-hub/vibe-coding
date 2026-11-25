@@ -1,0 +1,19 @@
+/* 세 페이지가 함께 쓰는 기본 스타일 */
+:root { --ink:#1f2933; --sub:#52606d; --line:#d9e2ec; --accent:#0b6e4f; --bg:#f5f7fa; }
+* { box-sizing: border-box; }
+body { margin:0; font-family:-apple-system,"Apple SD Gothic Neo","Malgun Gothic",sans-serif; color:var(--ink); background:var(--bg); line-height:1.6; }
+main { max-width:640px; margin:0 auto; padding:40px 20px 60px; }
+h1 { font-size:1.7rem; margin:0 0 6px; }
+p.lead { color:var(--sub); margin:0 0 24px; }
+.card { background:#fff; border:1px solid var(--line); border-radius:12px; padding:20px; margin-bottom:16px; }
+label { display:block; font-weight:600; margin-bottom:8px; }
+input[type=url] { width:100%; padding:12px; font-size:1rem; border:1px solid var(--line); border-radius:8px; }
+button { margin-top:12px; padding:11px 18px; font-size:1rem; font-weight:600; color:#fff; background:var(--accent); border:0; border-radius:8px; cursor:pointer; }
+button:hover { filter:brightness(1.1); }
+#qr { display:flex; justify-content:center; padding:8px 0; min-height:40px; }
+.result { word-break:break-all; }
+.msg { color:#b42318; min-height:1.4em; margin:8px 0 0; }
+a { color:var(--accent); }
+nav a { display:block; padding:14px 16px; border:1px solid var(--line); border-radius:10px; background:#fff; margin-bottom:10px; text-decoration:none; font-weight:600; }
+nav a span { display:block; font-weight:400; color:var(--sub); font-size:.92rem; }
+footer { color:var(--sub); font-size:.88rem; margin-top:28px; }
