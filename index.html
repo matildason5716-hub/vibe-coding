@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>바이브코딩 실습 결과물</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <h1>바이브코딩 실습 결과물</h1>
+  <p class="lead">바이브코딩 수업에서 만든 웹페이지를 GitHub Pages로 배포한 곳입니다.</p>
+
+  <div class="card">
+    <strong id="greeting">안녕하세요.</strong>
+    <div id="today"></div>
+  </div>
+
+  <nav>
+    <a href="url2qr.html">URL2QR <span>웹 주소를 QR 코드로 바꿉니다.</span></a>
+    <a href="qrnshort.html">QRnShort <span>웹 주소를 QR 코드와 짧은 주소로 한 번에 바꿉니다.</span></a>
+  </nav>
+
+  <footer>GitHub Pages로 배포 · 저장소: matildason5716-hub/vibe-coding</footer>
+</main>
+<script>
+// 현재 시각에 맞는 인사말과 오늘 날짜를 화면에 표시한다
+function showGreeting() {
+  const now = new Date();
+  const hour = now.getHours();
+  const text = hour < 12 ? '좋은 아침입니다.' : hour < 18 ? '좋은 오후입니다.' : '좋은 저녁입니다.';
+  document.getElementById('greeting').textContent = text;
+  document.getElementById('today').textContent =
+    now.toLocaleDateString('ko-KR', { year: 'numeric', month: 'long', day: 'numeric', weekday: 'long' });
+}
+showGreeting();
+</script>
+</body>
+</html>
